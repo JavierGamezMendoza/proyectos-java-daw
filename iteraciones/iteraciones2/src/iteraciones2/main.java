@@ -16,24 +16,26 @@ public class main {
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Bienvenido al gestor de alumnos del centro.");
-		while(true) {
-			System.out.print("Introduce la edad del alumno a añadir [cifra negativa para salir]: ");
-			edad = sc.nextInt();
-			if(edad < 0) {
-				break;
-			}
-			suma = suma + edad;
+		System.out.print("Introduce la edad del alumno a añadir [cifra negativa para salir]: ");
+		edad = sc.nextInt();
+		while(edad >= 0) {
+			suma += edad;
 			if (edad >= 18) {
 				mayores++;
 			}
 			alumnos++;
+			
+			System.out.print("Introduce la edad del alumno a añadir [cifra negativa para salir]: ");
+			edad = sc.nextInt();
 		}
-		media = suma / alumnos;
 		
-		System.out.println("El número de alumnos introducidos es: " + alumnos);
-		System.out.println("El número de alumnos mayores de edad entre ellos es: " + mayores);
-		System.out.println("La suma de las edades da como resultado:" + suma);
-		System.out.println("La media de edades es: " + media);
+		if (alumnos > 0) {
+			media = suma / alumnos;
+			System.out.println("El número de alumnos introducidos es: " + alumnos);
+			System.out.println("El número de alumnos mayores de edad entre ellos es: " + mayores);
+			System.out.println("La suma de las edades da como resultado:" + suma);
+			System.out.println("La media de edades es: " + media);
+		}
 	}
 
 }

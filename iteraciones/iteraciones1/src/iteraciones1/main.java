@@ -15,36 +15,23 @@ public class main {
 		String esPar;
 		String esPositivo;
 		double raiz;
-		int resultadoModulo;
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Bienvenido :)");
 		System.out.println("Este software proporcionara información acerca del número que introduzcas.");
 		
-		
-		while(true) {
 		System.out.print("Introduce un número [0 para salir]: ");
-		
 		numero = sc.nextInt();
 		
-		if (numero == 0) {
-			return;
-		}
+		while(numero != 0) {
+
+			raiz = numero * numero;
+			esPositivo = (numero >= 0) ? "positivo" : "negativo";
+			esPar = (numero % 2 == 0 ) ? "par" : "impar";
 		
-		raiz = Math.sqrt(numero);
-		if(numero >= 0 ) {
-			esPositivo="positivo";
-		}else {
-			esPositivo="positivo";
-		}
-		resultadoModulo = numero % 2;
-		if(resultadoModulo == 0) {
-			esPar = "par";
-		}else {
-			esPar = "impar";
-		}
-		
-		System.out.println("El número introducido(" + numero + ") es " + esPar + ", " + esPositivo + ", y su raiz es " + raiz + ".");
+			System.out.println("El número introducido(" + numero + ") es " + esPar + ", " + esPositivo + ", y su raiz es " + raiz + ".");
+			System.out.print("Introduce un número [0 para salir]: ");
+			numero = sc.nextInt();
 		}
 	}
 

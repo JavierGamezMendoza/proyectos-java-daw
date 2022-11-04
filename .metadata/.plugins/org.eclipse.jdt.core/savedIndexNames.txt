@@ -1,6 +1,0 @@
-INDEX VERSION 1.131+/home/habi/Daw/1º/PROG/java/.metadata/.plugins/org.eclipse.jdt.core
-2236576358.index
-1814878035.index
-2183313023.index
-455862213.index
-4064822000.index

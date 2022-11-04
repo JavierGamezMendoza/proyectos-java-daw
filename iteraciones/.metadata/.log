@@ -1484,3 +1484,8 @@ java.lang.Exception: The project description file (.project) for 'iteraciones1' 
 	at org.eclipse.egit.core.op.DisconnectProviderOperation.execute(DisconnectProviderOperation.java:64)
 	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:55)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 2 2 2022-11-04 09:14:44.966
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2022-11-04 09:14:44.967
+!MESSAGE The project description file (.project) for 'iteraciones1' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
